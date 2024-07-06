@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Dashboard</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="profile.html" class="navbar-link" id="profile-link">Profile</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link" id="logout-button">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="dashboard-container">
+        <h1>Welcome to the Dashboard</h1>
+        <p id="dashboard-message">Loading...</p>
+
+        <form id="postForm">
+            <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+
+        <div id="posts-container"></div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #0d0d0d, #1c1c1c);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #222;
+    border-bottom: 2px solid #ff00ff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.navbar-link:hover {
+    background: rgba(255, 0, 255, 0.1);
+}
+
+.dashboard-container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+#dashboard-message {
+    font-size: 18px;
+}
+
+.logout-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+}
+
+form {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #222;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+}
+
+#posts-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.post {
+    background: rgba(18, 18, 18, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-actions button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.post-actions button:hover {
+    color: #ff00ff;
+}
