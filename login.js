@@ -3,10 +3,6 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const username = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
 
-    console.log('Login form submitted');
-    console.log('Username:', username);
-    console.log('Password:', password);
-
     try {
         const response = await fetch('http://localhost:3000/login', {
             method: 'POST',
@@ -19,9 +15,9 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         const data = await response.json();
 
         if (response.ok) {
-            console.log('Login successful, storing token');
+            console.log('Login successful:', data);
             localStorage.setItem('token', data.token);
-            window.location.href = 'dashboard.html';
+            window.location.href = 'profile.html';  // Redirect to profile page
         } else {
             console.log('Login failed:', data.message);
             document.getElementById('login-error-message').textContent = data.message;
